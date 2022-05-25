@@ -24,8 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://m4kram.github.io/intro-section-with-dropdown-navigation/)
 
 ### Built with
 
@@ -39,3 +38,4 @@ Users should be able to:
 - Website - [Makram Abid](https://github.com/M4kram)
 - Frontend Mentor - [@M4kram](https://www.frontendmentor.io/profile/M4kram)
 - Twitter - [@M4kramAbd](https://twitter.com/M4kramAbd)
+

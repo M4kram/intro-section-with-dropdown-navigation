@@ -159,12 +159,14 @@ body {
     .learn-more {
         font-size: 3vh;
         background: hsl(0, 0%, 8%);
+        border: 1px solid hsl(0, 0%, 8%);
         text-align: center;
         width: auto;
         border-radius: 18px;
         padding: 25px 30px;
         margin-left: auto;
         margin-right: auto;
+        transition-duration: 0.2s;
     }
 
     .learn-more a {
@@ -173,7 +175,7 @@ body {
 
     .learn-more:hover {
         background-color: hsl(0, 0%, 98%);
-        border: 1px solid hsl(0, 0%, 8%) ;
+        border: 1px solid hsl(0, 0%, 8%);
     }
 
     .learn-more:hover a {
