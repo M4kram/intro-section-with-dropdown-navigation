@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body onload="background_changing(x)">
+  <div class="container">
+    <img src="images/icon-menu.svg" alt="menu-icon" class="menu-icon" onclick="openmenu()">
+     
+    <img src="images/logo.svg" alt="snap-logo" id="snap-logo">
+
+    <div class="image-container">
+        <img src="" class="image-background">
+    </div>
+
+    <div class="title-container">
+        <h1 class="title">Make remote work</h1>
+    </div>
+
+    <div class="paragraph-container">
+        <p class="paragraph">Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+    </div>
+
+    <div class="button-container">
+        <p class="learn-more"><a href="#">Learn more</a></p>
+    </div>
+    
+    <div class="icons">
+        <div class="elements">
+            <img src="images/client-databiz.svg" alt="client-databiz">
+            <img src="images/client-audiophile.svg" alt="client-audiophile">
+            <img src="images/client-meet.svg" alt="client-meet">
+            <img src="images/client-maker.svg" alt="client-maker">
+        </div>
+    </div>
+
+    <div class="attribution-container">
+        <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/M4kramAbd" target="_blank">Makram Abid</a>.
+        </div>
+    </div>
+
+    <div class="menu-box" id="menu">
+        <div class="right-section">
+            <img src="images/icon-close-menu.svg" alt="menu-close-icon" class="menu-close-icon" onclick="closemenu()">
+            <div class="menu-links">
+                <div class="main-links">
+                    <div class="link">
+                        <div class="title-link">
+                            <h4>Features</h4>
+                            <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="svg">
+                        </div>
+                        <div class="sub-links">
+                            <table>
+                                <tr><td><img src="images/icon-todo.svg" alt=""></td><td><a href="#"><h4>Todo List</h4></a></td></tr>
+                                <tr><td><img src="images/icon-calendar.svg" alt="icon-calendar"></td><td><a href="#"><h4>Calender</h4></a></td></tr>
+                                <tr><td><img src="images/icon-reminders.svg" alt="icon-reminders"></td><td><a href="#"><h4>Reminders</h4></a></td></tr>
+                                <tr><td><img src="images/icon-planning.svg" alt="icon-planning"></td><td><a href="#"><h4>Planning</h4></a></td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="title-link">
+                            <h4>Company</h4>
+                            <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="svg">
+                        </div>
+                        <div class="sub-links">
+                            <ul>
+                                <li><a href="#"><h4>History</h4></a></li>
+                                <li><a href="#"><h4>Our Team</h4></a></li>
+                                <li><a href="#"><h4>Blog</h4></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="title-link">
+                            <h4><a href="#">Careers</a></h4>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="title-link">
+                            <h4><a href="#">About</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondary-links">
+                    <h5 class="login"><a href="#">Login</a></h5>
+                    <h5 class="register"><a href="#" id="register">Register</a></h5>
+                </div>
+            </div>
+        </div>
+        <div class="left-section">
+        </div>
+    </div>
+  </div>
+  <script>
+    var menu = document.querySelector("#menu")
+
+    function openmenu() {
+        menu.style.top = "0%"
+    }
+
+    function closemenu() {
+        menu.style.top = "-100vh"
+    }
+
+    const links = document.querySelectorAll(".link");
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            link.classList.toggle("active");
+        })
+    })
+
+    var x = window.matchMedia("(max-width: 768px)")
+    var bg = document.querySelector(".image-background")
+
+    function background_changing(x){
+        if (x.matches) {
+            bg.setAttribute('src', 'images/image-hero-mobile.png');
+        }
+        else {
+            bg.setAttribute('src', 'images/image-hero-desktop.png');
+        }
+    }
+
+    x.addListener(background_changing)
+
+  </script>
+</body>
+</html>

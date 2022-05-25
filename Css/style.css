@@ -1,0 +1,450 @@
+body {
+    background: hsl(0, 0%, 98%);
+    font-size: small;
+    font-family: 'Epilogue', sans-serif;
+    color: hsl(0, 0%, 41%);
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    h4, h5 {
+        font-size: 0.8vw;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #snap-logo {
+        width: 5%;
+        position: absolute;
+        top: 4%;
+        left: 2%;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-close-icon {
+        display: none;
+    }
+
+    .image-container {
+        width: 100%;
+        position: absolute;
+    }
+    .image-container {
+        position: absolute;
+        top: 20%;
+    }
+    .image-background {
+        float: right;
+        width: 35%;
+        margin-right: 10%;
+    }
+
+    .menu-box { 
+        position: absolute;
+        width: 85%;
+        left: 12%;
+        top: 2.5%;
+    }
+
+    .menu-links {
+        display: flex;
+        gap: 68%;
+    }
+
+    .title-link {
+        display: flex;
+        align-items: center;
+        gap: 25%;
+    }
+
+    .main-links {
+        display: flex;
+        justify-content: flex-start;
+        gap: 45%;
+        cursor: pointer;
+    }
+
+    .main-links li {
+        list-style-type: none;
+        margin-bottom: 40px;
+    }
+
+    .main-links ul {
+        padding: 0;
+    }
+
+    table td {
+        padding: 0 3px;
+    }
+
+    .secondary-links {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30%;
+    }
+
+    .sub-links {
+        max-height: 0;
+        position: absolute;
+        background-color: hsl(0, 0%, 98%);
+        padding: 10px 20px;
+        border-radius: 25px;
+        overflow: hidden;
+        transition: 1s ease-in;
+    }
+
+    .link.active .sub-links {
+        background-color: white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        max-height: 300px;
+    }
+
+    .svg {
+        transition: transform 0.5s ease-in;
+    }
+
+    .link.active .svg {
+        transform: rotate(180deg);
+    }
+
+    a {
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+    }
+
+    #register {
+        border: 2px solid hsl(0, 0%, 41%);
+        padding: 10px 25px;
+        border-radius: 15px;
+    }
+
+    .title-container {
+        position: absolute;
+        top: 16%;
+        left: 10%;
+        width: 32%;
+    }
+
+    .title {
+        font-size: 11vh;
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .paragraph-container {
+        position: absolute;
+        bottom: 0%;
+        left: 10%;
+        top: 58%;
+    }
+    
+    .paragraph {
+        font-size: 3vh;
+        width: 40%;
+    }
+
+    .button-container {
+        position: absolute;
+        left: 10%;
+        top: 80%;
+    }
+
+    .learn-more {
+        font-size: 3vh;
+        background: hsl(0, 0%, 8%);
+        text-align: center;
+        width: auto;
+        border-radius: 18px;
+        padding: 25px 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .learn-more a {
+        color: white;
+    }
+
+    .learn-more:hover {
+        background-color: hsl(0, 0%, 98%);
+        border: 1px solid hsl(0, 0%, 8%) ;
+    }
+
+    .learn-more:hover a {
+        color: hsl(0, 0%, 8%);
+    }
+
+    .icons {
+        position: absolute;
+        top: 110%;
+        left: 10%;
+        width: 40%;
+    }
+    
+    .elements {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    .attribution-container {
+        background-color: hsl(0, 0%, 8%);
+        position: absolute;
+        bottom: -40%;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .attribution {
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        margin: 20px;
+    }
+
+    .attribution a {
+        color: #e7ef0e;
+    }
+
+    .attribution a:hover {
+        color: hsl(200, 91%, 54%);
+    }
+
+    .title-link:hover, a:hover {
+        color: hsl(0, 0%, 8%);
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-color: hsl(0, 0%, 98%);
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .menu-icon {
+        width: 7%;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        cursor: pointer;
+    }
+    
+    .menu-box {
+        position: relative;
+        top: -100vh;
+        transition: top 1s;
+    }
+    
+    .right-section {
+        background-color: rgb(255, 255, 255);
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        right: 0%;
+    }
+    
+    .left-section {
+        width: 30%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.4;
+    }
+    
+    .menu-close-icon {
+        width: 7%;
+        position: absolute;
+        top: 2%;
+        right: 8%;
+        cursor: pointer;
+    }
+    
+    .menu-links {
+        margin-top: 20%;
+        margin-left: 3%;
+        padding: 0 5%;
+    }
+    
+    .link {
+        cursor: pointer;
+    }
+    
+    h4 {
+        margin-right: 5%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    
+    h5 {
+        text-align: center;
+        padding: 10px 0px;
+        margin: 5px 0;
+    }
+    
+    table {
+        margin-left: 5%;
+    }
+    
+    td {
+        padding: 7px;
+    }
+    
+    .title-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    a {
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-left: 22px;
+    }
+    
+    li {
+        padding: 0.5px;
+    }
+    
+    .register {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        border: 1px solid hsl(0, 0%, 41%);
+        border-radius: 10px;
+    }
+    
+    .sub-links {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 2s ease;
+    }
+    
+    .link.active .sub-links {
+        max-height: 300px;
+    }
+    
+    .link.active .svg {
+        transform: rotate(180deg);
+    }
+    
+    .svg {
+        transition: transform 0.5s ease-in;
+    }
+    
+    #snap-logo {
+        width: 15%;
+        position: absolute;
+        top: 2%;
+        left: 5%;
+    }
+    
+    .image-container {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-background {
+        width: 100%;
+    }
+
+    .title-container {
+        position: absolute;
+        top: 54%;
+        width: 100%;
+    }
+    
+    .title {
+        color: hsl(0, 0%, 8%);
+        text-align: center;
+        font-size: 300%;
+    }
+    
+    .paragraph-container {
+        position: absolute;
+        width: 100%;
+        top: 63%;
+    }
+    
+    .paragraph {
+        font-size: 120%;
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button-container {
+        position: absolute;
+        top: 74%;
+        width: 100%;
+    }
+    
+    .learn-more {
+        font-size: 110%;
+        background: black;
+        text-align: center;
+        width: 25%;
+        border-radius: 10px;
+        padding: 10px 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .learn-more a {
+        color: hsl(0, 0%, 98%);
+    }
+    
+    .icons {
+        position: absolute;
+        top: 85%;
+        width: 100%;
+    }
+    
+    .elements {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .elements img {
+        width: 65px;
+        align-self: center;
+    }
+    
+    
+    .attribution-container {
+        position: absolute;
+        bottom: 3%;
+        width: 100%;
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .attribution a {
+        color: hsl(0, 0%, 8%);
+    }
+
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+}
